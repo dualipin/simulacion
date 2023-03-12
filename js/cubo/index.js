@@ -1,6 +1,16 @@
 
 //#region Constantes de elementos del DOM
 
+//#region Formularios
+
+function cuadradosMedios(){
+    const form = document.createElement('form');
+
+    const semillaIN = document.createElement()
+}
+
+//#endregion
+
 //#region Tabla Estadistica
 const media = document.getElementById('media');
 const mediana = document.getElementById('mediana');
@@ -27,8 +37,8 @@ const vecesCara6 = document.getElementById('vecesCara6');
 //#endregion
 
 //#region Generador de dados
-const main = document.getElementsByTagName('main');
-main[0].appendChild(generadorDados(1));
+const main = document.getElementById('dados');
+main.appendChild(generadorDados('dasd'));
 
 const cube = document.getElementById('1');
 
