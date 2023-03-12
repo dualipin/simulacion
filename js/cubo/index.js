@@ -11,6 +11,7 @@ const moda = document.getElementById('moda');
 const cuadradosMediosBTN = document.getElementById('opcion1');
 const productosMediosBTN = document.getElementById('opcion2');
 const algoritmnoLinealBTN = document.getElementById('opcion3');
+const algoritmoCongruencialLinealBTN = document.getElementById('opcion4');
 //#endregion
 
 //#region Tabla de Frecuencia
