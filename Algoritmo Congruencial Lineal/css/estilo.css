@@ -1,0 +1,62 @@
+
+html body{
+    margin: 0;
+    padding: 0;
+    
+} 
+body{
+    font-family: "Roboto";
+    text-align: justify;
+    background-color:white;
+    color:rgb(19, 18, 18);
+}
+#contenedor{
+    float: right;
+}
+.banner_img{
+    float: right;
+}
+.banner_img{
+    float: right;
+    width: 1000px;
+    height: 500px;
+    display: block;
+    
+}
+
+.banner_img .tablero {
+    float: left;
+    animation: tablero 2s linear infinite;
+
+}
+
+.banner_img .dardo{
+    float: left;
+    animation: dardo .7s linear infinite;
+}
+
+@keyframes tablero {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+    
+}
+
+@keyframes dardo {
+    0%{
+        transform: translateX(30px);
+    }
+    50%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(30px);
+    }
+    
+}
