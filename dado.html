@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/dado.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Cubo - Numeros Pseudoaleatorios</title>
+  </head>
+  <body>
+    <header>
+      <h1>Numeros Pseudoaleatorios</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="dado.html">Dado</a></li>
+          <li><a href="dardo.html">Dardo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="menu">
+        <nav>
+          <h2>Seleccione un metodo de generación</h2>
+          <form>
+            <label for="s1"
+              >Semilla 1:<input type="number" name="s1" id="s1" />
+            </label>
+            <label for="s2"
+              >Semilla 2:<input type="number" name="s2" id="s2"
+            /></label>
+            <label for="d"
+              >D digitos:<input type="number" name="d" id="d"
+            /></label>
+            <label for="gen"
+              >Numeros a generar:<input type="number" name="gen" id="gen" />
+            </label>
+          </form>
+          <button onclick="generarNumeros()">Productos medios</button>
+        </nav>
+
+        <section class="metodo">
+          <table>
+            <caption>
+              Estadistica
+            </caption>
+            <thead>
+              <tr>
+                <th>Media</th>
+                <th>Mediana</th>
+                <th>Moda</th>
+              </tr>
+            </thead>
+            <tbody id="Estadistica">
+              <tr>
+                <td id="media"></td>
+                <td id="mediana"></td>
+                <td id="moda"></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="numeros-generados"></section> 
+      </div>
+
+      <section class="dados" id="sectionDado">
+        <!--div class="content">
+          <div id="dado">
+            <div class="cara c1"><img src="img/c1.png" alt="" /></div>
+            <div class="cara c2"><img src="img/c2.png" alt="" /></div>
+            <div class="cara c3"><img src="img/c3.png" alt="" /></div>
+            <div class="cara c4"><img src="img/c4.png" alt="" /></div>
+            <div class="cara c5"><img src="img/c5.png" alt="" /></div>
+            <div class="cara c6"><img src="img/c6.png" alt="" /></div>
+          </div>
+        </div-->
+      </section>
+
+      <aside>
+        <h2>Valores Generados</h2>
+        <section class="mas-generado-tabla">
+          <table>
+            <caption>
+              Mas repetido
+            </caption>
+            <thead>
+              <tr>
+                <th>Cara</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="caraMas"></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="generados-tabla">
+          <table>
+            <caption>
+              Valores
+            </caption>
+            <thead>
+              <th>Cara</th>
+              <th>Veces</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="cara-tabla"><img src="img/c1.png" alt="" /></div>
+                </td>
+                <td id="c1"></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cara-tabla"><img src="img/c2.png" alt="" /></div>
+                </td>
+                <td id="c2"></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cara-tabla"><img src="img/c3.png" alt="" /></div>
+                </td>
+                <td id="c3"></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cara-tabla"><img src="img/c4.png" alt="" /></div>
+                </td>
+                <td id="c4"></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cara-tabla"><img src="img/c5.png" alt="" /></div>
+                </td>
+                <td id="c5"></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cara-tabla"><img src="img/c6.png" alt="" /></div>
+                </td>
+                <td id="c6"></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </aside>
+      <div class="tabla">
+        <table>
+          <thead>
+            <th>Numeros generados</th>
+            <th>Valor Numero</th>
+          </thead>
+          <tbody id="valoresgenerados">
+            
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!--script src="js/index.js"></script-->
+    <script src="js/cuadrados-medios.js"></script>
+  </body>
+</html>

@@ -1,15 +1,22 @@
-
-html body{
-    margin: 0;
-    padding: 0;
-    
-} 
-body{
-    font-family: "Roboto";
-    text-align: justify;
-    background-color:white;
-    color:rgb(19, 18, 18);
+table caption, table {
+    border: 1px solid black;
 }
+
+table {
+    margin: 10px;
+}
+
+.tablas {
+    display: block;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: rgb(255, 255, 255);
+  }
+  
 #contenedor{
     float: right;
 }
@@ -30,10 +37,24 @@ body{
 
 }
 
-.banner_img .dardo{
+.banner_img .dart{
+    width: 50px;
+    height: 50px;
     float: left;
     animation: dardo .7s linear infinite;
 }
+.dart img {
+    width: 300px;
+    height: 300px;
+}
+
+#punto {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+  }  
 
 @keyframes tablero {
     0%{

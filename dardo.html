@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dardos - Algoritmo Congruencial Lineal</title>
+    <link rel="shortcut icon" href="dardos.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/dardo.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Numeros Pseudoaleatorios</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="dado.html">Dado</a></li>
+          <li><a href="dardo.html">Dardo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="form">
+        <div class="input">
+          <label for="a">Ingrese la variable 'a'</label>
+          <input type="number" name="a" id="a" />
+        </div>
+        <div class="input">
+          <label for="c">Ingrese la constante 'c'</label>
+          <input type="number" name="c" id="c" />
+        </div>
+        <div class="input">
+          <label for="m">Ingrese la constante 'm'</label>
+          <input type="number" name="m" id="m" />
+        </div>
+        <div class="input">
+          <label for="xi">Ingrese 'xi'</label>
+          <input type="number" name="xi" id="xi" />
+        </div>
+        <button onclick="generarNumeros()">Generar Números</button>
+      </div>
+
+      <section class="juego">
+        <button id="lanzar-dardo">Lanzar dardo</button>
+        <button id="reiniciar-juego">Reiniciar juego</button>
+        <p>Puntuación: <span id="puntuacion">0</span></p>
+        <p>Dardos restantes: <span id="dardos-restantes">10</span></p>
+
+        <div id="contenedor">
+          <div class="banner_img">
+            <div class="tablero">
+              <div class="diana">
+                <div class="circulo1"></div>
+                <div class="circulo2"></div>
+                <div class="circulo3"></div>
+                <div class="circulo4"></div>
+                <div class="circulo5"></div>
+                <div class="circulo6"></div>
+                <div class="circulo7"></div>
+                <div class="circulo8"></div>
+                <div class="circulo9"></div>
+                <div class="circulo10"></div>
+                <div class="circulo11"></div>
+                <div class="circulo12"></div>
+                <div class="circulo13"></div>
+              </div>
+            </div>
+            <div class="dart">
+              <img src="img/dardo.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="tablas">
+        <table>
+          <thead>
+            <caption>
+              Numeros Generados
+            </caption>
+            <th>Numero Generado</th>
+            <th>Posicion</th>
+          </thead>
+          <tbody id="tabla"></tbody>
+        </table>
+
+        <table>
+          <caption>
+            Posiciones
+          </caption>
+          <thead>
+            <th>Posicion</th>
+            <th>Veces</th>
+          </thead>
+          <tbody id="posiciones"></tbody>
+        </table>
+
+        <table>
+          <caption>
+            Estadistica posiciones
+          </caption>
+          <thead>
+            <th>Media</th>
+            <th>Mediana</th>
+            <th>Moda</th>
+          </thead>
+          <tbody id="estadistica"></tbody>
+        </table>
+
+        <table>
+          <caption>
+            Estadistica Numeros
+          </caption>
+          <thead>
+            <th>Media</th>
+            <th>Mediana</th>
+            <th>Moda</th>
+          </thead>
+          <tbody id="numeros"></tbody>
+        </table>
+        <p>Números mas generados: <span id="numeros-generados"></span></p>
+      </div>
+    </main>
+
+    <footer>
+      <h2>Numeros Pseudo</h2>
+      <p>Generador de dardos y numeros Pseudoaleatorios</p>
+      <p>Algoritmo Congruencial Lineal</p>
+    </footer>
+
+    <script src="script/js.js"></script>
+    <script src="js/dardo.js"></script>
+  </body>
+</html>

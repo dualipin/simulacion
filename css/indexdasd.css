@@ -1,0 +1,28 @@
+* {
+  list-style: none;
+}
+
+aside,.menu {
+    padding-top: 10px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.menu menu {
+  padding: 10px;
+}
+
+.menu button {
+  height: auto;
+  width: 80%;
+  margin: 10px;
+  padding: 5px;
+}
+
+.menu input {
+  width: 80%;
+  height: 1.5em;
+  margin: 5px 10px;
+}

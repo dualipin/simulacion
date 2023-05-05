@@ -1,147 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/dado.css">
-  <title>PseudoDado</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="shortcut icon" href="inicio.png" type="image/x-icon">
+  <title>Inicio - Numeros Pseudoaleatorios</title>
 </head>
-
 <body>
   <header>
-    <h1>Numeros Pseudoaleatorios</h1>
+  <p class="letrero">
+    Bienvenidos a este generador de Numeros Pseudoaleatorios
+  </p>
+    <h1>Simulación</h1>
     <nav>
       <ul>
-        <li><a href="./">Dado</a></li>
-        <li><a href="tiro-al-blanco/index.html">Dardo</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="dado.html"">Cubo - Productos Medios</a></li>
+        <li><a href="dardo.html">Dardo - Concruencial Lineal</a></li>
       </ul>
     </nav>
   </header>
-
+  
   <main>
-    <nav class="menu">
-      <h2>Seleccione un metodo de generación</h2>
-      <menu>
-        <li><button id="opcion1">Cuadrados Medios</button></li>
-        <li><button id="opcion2">Productos Medios</button></li>
-        <li><button id="opcion3">Algoritmo lineal</button></li>
-        <li><button id="opcion4">Algoritmo Congruencial lineal</button></li>
-      </menu>
-    </nav>
+    <section class="main">
 
-
-    <section id="dados">
-
+      <section class="bienvenida">
+        
+        <h2>Bienvenidos</h2>
+        
+        <p>Bienvenido a nuestra pagina web sobre la materia de Simulación</p>
+        
+      </section>
+      
+      <section class="sobre">
+        <h2>Acerca de nosotros</h2>
+        <p>Moises Ignacio Jimenez Colorado</p>
+        <p>-------------------------------</p>
+        <p>Martin Sanchez Reyes</p>
+        <p>-------------------------------</p>
+        <p>Juan Jesus Felix Geronimo</p>
+        <p>-------------------------------</p>
+      </section>
     </section>
-
-
-    <aside>
-      <h2>Valores Generados</h2>
-      <section class="mas-generado-tabla">
-        <table>
-          <caption>Mas repetido</caption>
-          <thead>
-            <tr>
-              <th>Cara</th>
-              <th>Veces</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="cara-tabla"></td>
-              <td id="vecesRepetido"></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section class="generados-tabla">
-        <table>
-          <caption>Valores</caption>
-          <thead>
-            <tr>
-              <th>Cara</th>
-              <th>Repetidas</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="cara1 cara-tabla"></div>
-              </td>
-              <td><span id="vecesCara1"></span></td>
-            </tr>
-            <tr>
-              <td>
-                <div class="cara2 cara-tabla"></div>
-              </td>
-              <td><span id="vecesCara2"></span></td>
-            </tr>
-            <tr>
-              <td>
-                <div class="cara3 cara-tabla"></div>
-              </td>
-              <td><span id="vecesCara3"></span></td>
-            </tr>
-            <tr>
-              <td>
-                <div class="cara4 cara-tabla"></div>
-              </td>
-              <td><span id="vecesCara4"></span></td>
-            </tr>
-            <tr>
-              <td>
-                <div class="cara5 cara-tabla"></div>
-              </td>
-              <td><span id="vecesCara5"></span></td>
-            </tr>
-            <tr>
-              <td>
-                <div class="cara6 cara-tabla"></div>
-              </td>
-              <td><span id="vecesCara6"></span></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </aside>
-  </main>
+      
+    </main>
 
   <footer>
-    <section class="metodo">
-      <h2>El metodo seleccionado es: <span id="metodoselected"></span></h2>
-      <div id="formMetodoSelected"></div>
-    </section>
-
-    <!-- #region Tabla de Estadistica-->
-    <section class="probabilidad">
-      <table>
-        <caption>Estadistica</caption>
-        <thead>
-          <tr>
-            <th>Media</th>
-            <th>Mediana</th>
-            <th>Moda</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td id="media"></td>
-            <td id="mediana"></td>
-            <td id="moda"></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <!-- #endregion -->
-
+    <p>Instituto Tecnológico Superior de Macuspana &copy; 2023</p>
   </footer>
 
-  <!-- #region Scripts-->
-  <script src="js/cubo/index.js"></script>
-  <!-- #endregion -->
 </body>
-
 </html>

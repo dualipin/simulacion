@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diana {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.circulo1 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.circulo2 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.circulo3 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.circulo4 {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.circulo5 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.circulo6 {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.circulo7 {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.circulo8 {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.circulo9 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.circulo10 {
+  position: absolute;
+  top: 42.5%;
+  left: 42.5%;
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.circulo11 {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.circulo12 {
+  position: absolute;
+  top: 47.5%;
+  left: 47.5%;
+  width: 5%;
+  height: 5%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.circulo13 {
+  position: absolute;
+  top: 48.75%;
+  left: 48.75%;
+  width: 2.5%;
+  height: 2.5%;
+  border-radius: 50%;
+  background-color: crimson;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+#puntuacion {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#dardos-restantes {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.dardo {
+  content: url("../img/dardo.png");
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+}
+
+main .form {
+  width: 20%;
+}
+
+main  .juego {
+  padding: 10px;
+  bottom: 10%;
+
+}
+
+main .tablas {
+  width: 20%;
+}
+
+.form {
+  width: 100%;
+  height: 300px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.form .input {
+  margin: 10px 20px;
+}
+
+.form button {
+  width: 100%;
+  font-size: medium;
+}
